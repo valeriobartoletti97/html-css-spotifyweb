@@ -21,6 +21,10 @@ body{
     font-family: 'Noto Sans', sans-serif;
     font-size: 1.8em;
 }
+img{
+    display: block;
+    width: 100%;
+}
 /* utility */
 .d-flex{
     display: flex;
@@ -59,7 +63,7 @@ main{
     height: calc(100% - 200px);
 }
 #call-to-action{
-    width:calc(100% - 500px);
+    width:calc(100% - 400px);
     height: 200px;
     position: fixed;
     top:0;
@@ -82,18 +86,38 @@ main{
     max-width: 1500px;
     margin: 0 auto;;
 }
+/* main-section */
 #main-content{
-    width:calc(100% - 500px);
+    width:calc(100% - 400px);
     overflow-y: auto;
     background-color: var(--color-dark-color);
     padding-top: 250px;
+}
+.album{
+    padding: 100px 50px;
+}
+.album-title{
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+.card{
+    width: calc(100% / 6);   
+    height: ; 
+}
+.card-description{
+    text-align:center;
+}
+h4{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
 }
 .card-container{
 
 }
 /* sidebar */
 #sidebar{
-    width:500px;
+    width:400px;
     height:100%;
     background-color:var(--color-black);
 }

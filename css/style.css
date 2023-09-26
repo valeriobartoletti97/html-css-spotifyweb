@@ -19,7 +19,7 @@ body{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.2em;
 }
 img{
     display: block;
@@ -46,11 +46,20 @@ ul{
     font-weight: 700;
 }
 li{
-    padding: 0 15px;
     cursor: pointer;
+    font-size: 1.4em;
 }
 a{
     text-decoration: none;
+}
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position:absolute;
+}
+.d-none{
+    display: none;
 }
 /* body */
 
@@ -60,7 +69,7 @@ a{
 }
 main{
     width: 100%;
-    height: calc(100% - 200px);
+    height: calc(100% - 100px);
 }
 #call-to-action{
     width:calc(100% - 400px);
@@ -73,14 +82,17 @@ main{
 #update-btn{
     border: 1px solid white;
     color: white;
-    padding: 30px 90px;  
+    padding: 20px 90px;  
     position:absolute;
-    right: 15px;
-    top: 40px;
+    right: 50px;
+    top: 60px;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 1.2em;
     border-radius: 100px;
+}
+#update-btn:hover{
+    transform: scale(1.1);
 }
 .navbar{
     max-width: 1500px;
@@ -93,20 +105,40 @@ main{
     background-color: var(--color-dark-color);
     padding-top: 250px;
 }
+ul hr{
+    border: 1px solid var(--color-highlight);
+    width:50px;
+    margin: 0 auto;
+}
+ul > div:hover .d-none{
+    display:block;
+}
 .album{
     padding: 0px 50px;
 }
 .album-title{
     font-size: 1.5em;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 .album-subtitle{
     font-size: 0.7em;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 .card{
     width: calc(100% / 6);   
-    padding-right: 80px;
+    padding-right: 30px;
+    cursor:pointer;
+}
+.fa-solid.p-absolute{
+    left: 50%;
+    bottom: 50%;
+    font-size: 100px;
+    transform: translate(-50px, 50px);
+    color: white;
+    display:none;
+}
+.card:hover .fa-solid.p-absolute{
+    display:inline-block
 }
 .card-description{
     text-align:center;
@@ -117,9 +149,12 @@ main{
     object-fit: contain;
     overflow:hidden;
 }
+h2{
+    margin-top: 40px;
+}
 h4{
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 1.5em;
 }
 /* sidebar */
@@ -134,7 +169,7 @@ h4{
     position: fixed;
     bottom:0;
     left:0;
-    height:200px;
+    height:150px;
     width: 100%;
     z-index: 1000;
     background-color: var(--color-dark-grey);

@@ -239,8 +239,26 @@
                     </div>
                 </div>
             </div>
-            <div class="playbar-center"></div>
-            <div class="playbar-right"></div>
+            <div class="playbar-center">
+                <div class="d-flex space-around playbar-buttons">
+                    <i class="fa-solid fa-shuffle pt-10"></i>
+                    <i class="fa-solid fa-backward-step pt-10"></i>
+                    <i class="fa-regular fa-circle-play big-icon"></i>
+                    <i class="fa-solid fa-forward-step pt-10"></i>
+                    <i class="fa-solid fa-rotate-right pt-10"></i>
+                </div>
+                <div class="volume-center-container">
+                    <span>0.25</span>
+                    <input type="range" class="volume-bar volume-center">
+                    <span>4:35</span>
+                </div>
+            </div>
+            <div class="playbar-right d-flex space-between align-center">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" class="volume-bar">
+            </div>
         </div>
     </div>
 </body>

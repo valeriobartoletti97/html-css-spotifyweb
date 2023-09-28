@@ -278,6 +278,38 @@ h4{
 .playbar-center{
     width: 40%;
 }
+.playbar-left , .playbar-right , .playbar-center{
+    padding: 20px 15px;
+}
+.current-song img , .current-song-info , .playbar-left-icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+.current-song img{
+    width: 50px;
+}
+.current-song-info{
+    padding-left: 10px;
+}
+.current-song-info span{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.current-song-info span:nth-of-type(2){
+    color:var(--color-grey);
+    font-size: 1em;
+}
+.playbar-left-icon{
+    margin-left: 40px;
+}
+.playbar-left-icon i{
+    font-size: 1.3em;
+    color: var(--color-grey);
+    margin-left: 6px;
+}
+i:hover{
+    color: white;
+}
 
 /* media query */
 @media screen and (max-width: 1200px){
